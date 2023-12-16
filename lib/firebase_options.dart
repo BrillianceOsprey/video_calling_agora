@@ -25,7 +25,10 @@ class DefaultFirebaseOptions {
       case TargetPlatform.iOS:
         return ios;
       case TargetPlatform.macOS:
-        return macos;
+        throw UnsupportedError(
+          'DefaultFirebaseOptions have not been configured for macos - '
+          'you can reconfigure this by running the FlutterFire CLI again.',
+        );
       case TargetPlatform.windows:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for windows - '
@@ -44,45 +47,28 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyCDRZCpOChDuPm-XuIVRL95UCiHJ3Vt69k',
-    appId: '1:966826657989:web:e0a3000cd9d07090dcc8ac',
-    messagingSenderId: '966826657989',
-    projectId: 'easy-chat-84b64',
-    authDomain: 'easy-chat-84b64.firebaseapp.com',
-    databaseURL: 'https://easy-chat-84b64-default-rtdb.europe-west1.firebasedatabase.app',
-    storageBucket: 'easy-chat-84b64.appspot.com',
+    apiKey: 'AIzaSyBtDlKXVF8ErhfHJlY7cnGPtPBBNjGTWUo',
+    appId: '1:1087136187556:web:76efa2b23e53c869be1231',
+    messagingSenderId: '1087136187556',
+    projectId: 'agora-audio-call-app',
+    authDomain: 'agora-audio-call-app.firebaseapp.com',
+    storageBucket: 'agora-audio-call-app.appspot.com',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyALkiNMpJD-PVevrs7nuFck1HMkNtS00Bc',
-    appId: '1:966826657989:android:b0e87c5f71476973dcc8ac',
-    messagingSenderId: '966826657989',
-    projectId: 'easy-chat-84b64',
-    databaseURL: 'https://easy-chat-84b64-default-rtdb.europe-west1.firebasedatabase.app',
-    storageBucket: 'easy-chat-84b64.appspot.com',
+    apiKey: 'AIzaSyANcQHhZnXTptmBhtKioXqTdiQfG1RU7J8',
+    appId: '1:1087136187556:android:cc03caffb3daeecfbe1231',
+    messagingSenderId: '1087136187556',
+    projectId: 'agora-audio-call-app',
+    storageBucket: 'agora-audio-call-app.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyBdz8l4U8UIw7j2IC_A9XQUUNG3drcfbVw',
-    appId: '1:966826657989:ios:f055302dc87e4394dcc8ac',
-    messagingSenderId: '966826657989',
-    projectId: 'easy-chat-84b64',
-    databaseURL: 'https://easy-chat-84b64-default-rtdb.europe-west1.firebasedatabase.app',
-    storageBucket: 'easy-chat-84b64.appspot.com',
-    androidClientId: '966826657989-c84gbqahsn3cq8ge9o8kq18lt2f8pq4b.apps.googleusercontent.com',
-    iosClientId: '966826657989-imkb6pne631ibcc2h3dge2dhja3rji24.apps.googleusercontent.com',
+    apiKey: 'AIzaSyBJNIWcp3waKwrUJe0mtgpqXLVN1BmKRow',
+    appId: '1:1087136187556:ios:4b1b638106e94b12be1231',
+    messagingSenderId: '1087136187556',
+    projectId: 'agora-audio-call-app',
+    storageBucket: 'agora-audio-call-app.appspot.com',
     iosBundleId: 'com.example.videoCalling',
-  );
-
-  static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyBdz8l4U8UIw7j2IC_A9XQUUNG3drcfbVw',
-    appId: '1:966826657989:ios:9e3d83bf0adf15d3dcc8ac',
-    messagingSenderId: '966826657989',
-    projectId: 'easy-chat-84b64',
-    databaseURL: 'https://easy-chat-84b64-default-rtdb.europe-west1.firebasedatabase.app',
-    storageBucket: 'easy-chat-84b64.appspot.com',
-    androidClientId: '966826657989-c84gbqahsn3cq8ge9o8kq18lt2f8pq4b.apps.googleusercontent.com',
-    iosClientId: '966826657989-munbmpkagcf1veqvdj8g7gfdg4ld2ta9.apps.googleusercontent.com',
-    iosBundleId: 'com.example.videoCalling.RunnerTests',
   );
 }

@@ -83,6 +83,7 @@ class _CreateChannelPageState extends State<CreateChannelPage> {
         }
       }
     } catch (e) {
+      // ignore: use_build_context_synchronously
       _showSnackBar(
         context,
         'Error generating token: $e',

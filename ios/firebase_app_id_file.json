@@ -1,7 +1,7 @@
 {
   "file_generated_by": "FlutterFire CLI",
   "purpose": "FirebaseAppID & ProjectID for this Firebase app in this directory",
-  "GOOGLE_APP_ID": "1:966826657989:ios:f055302dc87e4394dcc8ac",
-  "FIREBASE_PROJECT_ID": "easy-chat-84b64",
-  "GCM_SENDER_ID": "966826657989"
+  "GOOGLE_APP_ID": "1:1087136187556:ios:4b1b638106e94b12be1231",
+  "FIREBASE_PROJECT_ID": "agora-audio-call-app",
+  "GCM_SENDER_ID": "1087136187556"
 }
